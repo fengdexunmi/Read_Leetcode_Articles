@@ -2,7 +2,7 @@
 
 Emoij|Decs
 :--:|:--:
-:link:|Click to read original acticle
+[:link:](https://leetcode.com/problemset/all/)|Click to read original acticle
 :+1:|**Easy** Difficulty
 :+1::+1:|**Medium** Difficulty
 :+1::+1::+1:|**Hard** Difficulty
