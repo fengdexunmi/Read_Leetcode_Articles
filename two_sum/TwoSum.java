@@ -30,5 +30,7 @@ public class TwoSum {
             //TODO: handle exception
             System.out.print(e.getMessage());
         }
+
+        HashMap map = new HashMap<>();
     }
 }
