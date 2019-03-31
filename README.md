@@ -8,8 +8,9 @@ Emoij|Decs
 :+1::+1::+1:|**Hard** Difficulty
 
 
-Title|Solution(En)|Solution(Zh-cn)|Code(Java)|Code(Python)|Difficulty
+Problems|Solution(Java)|Solution(Python)
 --|:--:|:--:|:--:|:--:|--
-Two Sum|[:link:](https://leetcode.com/articles/two-sum/)|[:link:](https://leetcode-cn.com/articles/two-sum/)|[TwoSum.java](./two_sum/TwoSum.java)|[TwoSum.py](./two_sum/TwoSum.py)|:+1:
-Add Two Numbers|[:link:](https://leetcode.com/articles/add-two-numbers/)|[:link:](https://leetcode-cn.com/articles/add-two-numbers/)|[AddTwoNumbers.java](./add_two_numbers/AddTwoNumbers.java)|[AddTwoNumbers.py](./add_two_numbers/AddTwoNumbers.py)|:+1::+1:
-Longest Substring Without Repeating Characters|[:link:](https://leetcode.com/articles/longest-substring-without-repeating-characters/)|[:link:](https://leetcode-cn.com/articles/longest-substring-without-repeating-characters/)|[LongestSubStringWithoutRepeating.java](./longest_substring_without_repeating/LongestSubStringWithoutRepeating.java)||:+1::+1:
+[Two Sum](https://leetcode.com/articles/two-sum/):+1:|[TwoSum.java](./two_sum/TwoSum.java)|[TwoSum.py](./two_sum/TwoSum.py)|
+[Add Two Numbers](https://leetcode.com/articles/add-two-numbers/):+1::+1:|[AddTwoNumbers.java](./add_two_numbers/AddTwoNumbers.java)|[AddTwoNumbers.py](./add_two_numbers/AddTwoNumbers.py)
+[Longest Substring Without Repeating Characters](https://leetcode.com/articles/longest-substring-without-repeating-characters/):+1::+1:|[LongestSubStringWithoutRepeating.java](./longest_substring_without_repeating/LongestSubStringWithoutRepeating.java)|
+[Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/):+1::+1::+1:|[MedianOfTwoSortedArrays.java](./2019/week_01/MedianOfTwoSortedArrays.java)
