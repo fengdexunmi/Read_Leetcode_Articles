@@ -44,18 +44,22 @@ b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>,...,b<sub>j</sub> | / | b<sub>j+1</s
 L<sub>i</sub>为a<sub>i</sub>、b<sub>j</sub>  
 R<sub>i</sub>为a<sub>i+1</sub>、b<sub>j+1</sub>
 
-a<sub>i</sub> <= a<sub>i+1</sub>以及b<sub>j</sub> <= b<sub>j+1</sub>是一定的，如果a<sub>i</sub> <= b<sub>j+1</sub> && b<sub>j</sub> <= a<sub>i+1</sub>，则序列a和序列b合并之后，cut左边的部分为a<sub>1</sub>...a<sub>i</sub>和b<sub>1</sub>...b<sub>j</sub>组成的一个整体，右边部分为a<sub>i+1</sub>...a<sub>m</sub>和b<sub>j+1</sub>...b<sub>n</sub>组成的一个整体，如果左边的整体的长度和右边整体的长度相等。则可以得出中位数 = (Max(a<sub>i</sub>, b<sub>j</sub>) + Min(a<sub>i+1</sub>, b<sub>j+1</sub>))/2.0  
+a<sub>i</sub> <= a<sub>i+1</sub>以及b<sub>j</sub> <= b<sub>j+1</sub>是一定的，如果a<sub>i</sub> <= b<sub>j+1</sub> && b<sub>j</sub> <= a<sub>i+1</sub>，则序列a和序列b合并之后，cut左边的部分为a<sub>1</sub>...a<sub>i</sub>和b<sub>1</sub>...b<sub>j</sub>组成的一个整体，右边部分为a<sub>i+1</sub>...a<sub>m</sub>和b<sub>j+1</sub>...b<sub>n</sub>组成的一个整体，如果左边的整体的长度和右边整体的长度相等。则可以得出中位数 = (Max(a<sub>i</sub>, b<sub>j</sub>) + Min(a<sub>i+1</sub>, b<sub>j+1</sub>))/2.0
+
 逆向思维，合并之后序列总长度为m+n，先达成第一个相等条件（左边整体和右边整体长度相等），以二分原则对序列a进行cut操作取出k个数，则序列b需要取出(m+n)/2-k个数从而计算出b的cut位置，不断调整序列a的cut位置，最终达成ai <= bj+1 && bj <= ai+1条件则完成。
 
 #### 避免奇偶数
-为了避免处理奇偶数，我们虚拟添加'#'到序列元素两边，让序列长度恒为奇数(为原来的2倍+1)。  
+为了避免处理奇偶数，我们虚拟添加'#'到序列元素两边，让序列长度恒为奇数(为原来的2倍+1)。
+
 Before|Len|After|Len
 :---:|:---:|:---:|:---:
 [2, 5, 9, 11] | 4 | [#, 2, #, 5, #, 9, #, 11, #] | 9 
 [3, 8, 12] | 3 | [#, 3, #, 8, #, 12, #] | 7
+
 这样处理之后，我们能得出：  
 Li = (Ci-1)/2   
-Ri = Ci/2
+Ri = Ci/2  
+
 对于序列[#, 2, #, 5, #, 9, #, 11, #]，C=4(下标)，L=1, R=2,分别对应了5和9在原数组的下标。  
 对于序列[#, 3, #, 8, #, 12, #]，C=3(下标)，L=1, R=1,对应了8在原数组的下标。  
 所以，才有虚拟添加#的说法，不是真的添加#到序列中。
